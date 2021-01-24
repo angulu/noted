@@ -1,140 +1,163 @@
-.active {
-    text-decoration: underline;
-    text-decoration-color: hsl(235, 19%, 35%);
-    color: hsl(235, 19%, 35%);
+.light-active {
+  text-decoration: underline;
+  text-decoration-color: hsl(235, 19%, 35%);
+  color: hsl(235, 19%, 35%);
+}
+
+.dark-active {
+  text-decoration: underline;
+  text-decoration-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 98%);
 }
 
 .dark-box-shadow {
-    box-shadow: 0px 14px 14px -2px rgba(0,0,0,0.11);
+  box-shadow: 0px 14px 14px -2px rgba(0, 0, 0, 0.11);
 }
 
 .light-box-shadow {
-    box-shadow: 0px 7px 14px 0px hsl(236, 33%, 92%, 41%);
+  box-shadow: 0px 7px 14px 0px hsl(236, 33%, 92%, 41%);
 }
 
 .check {
-    width: 12px;
-    height: 12px;
+  width: 12px;
+  height: 12px;
 }
 
 .check-div {
-    /* border: 1px solid hsl(237, 14%, 26%); */
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    margin: 5px 20px 5px 15px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /* border: 1px solid hsl(237, 14%, 26%); */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 5px 20px 5px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .dark-check-div {
-    border: 1px solid hsl(237, 14%, 26%);
+  border: 1px solid hsl(237, 14%, 26%);
 }
 
 .light-check-div {
-    border: 1px solid hsl(233, 11%, 84%);
+  border: 1px solid hsl(233, 11%, 84%);
 }
 
 .check-clicked {
-    background: linear-gradient(0.45turn, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background: linear-gradient(
+    0.45turn,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
 }
 
 .dark-container {
-    background-color: hsl(235, 24%, 19%);
+  background-color: hsl(235, 24%, 19%);
 }
 
 .light-container {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 input {
-    background-color: transparent;
-    border: 0px;
+  background-color: transparent;
+  border: 0px;
 
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 
-    outline: none;
+  outline: none;
 }
 
 .margin-10 {
-    margin: 20px 0px 10px;
+  margin: 20px 0px 10px;
 }
 
 .margin-20 {
-    margin: 20px 0px;
+  margin: 20px 0px;
 }
 
 .margin-40 {
-    margin: 20px 0px 40px;
+  margin: 20px 0px 40px;
 }
 
 .margin-right-20 {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .margin-right-50 {
-    margin-right: 90px;
+  margin-right: 90px;
 }
 
 .new-container {
-    border-radius: 3px;
-    box-sizing: border-box;
-    /* padding: 10px; */
+  border-radius: 3px;
+  box-sizing: border-box;
+  /* padding: 10px; */
 }
 
 .new-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .padding-10 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .padding-15 {
-    padding: 15px 10px;
+  padding: 15px 10px;
 }
 
 .padding-30 {
-    padding: 15px 30px;
+  padding: 15px 30px;
 }
 
 .small {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .dark-todo {
-    border-bottom: 1px solid hsl(237, 14%, 26%);
+  border-bottom: 1px solid hsl(237, 14%, 26%);
 }
 
 .light-todo {
-    border-bottom: 1px solid hsl(233, 11%, 84%);
+  border-bottom: 1px solid hsl(233, 11%, 84%);
 }
 
 .todo-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .todo-footer span:hover {
-    color: hsl(220, 98%, 61%);
+  color: hsl(220, 98%, 61%);
 }
 
 .white-text {
-    color: #fff
+  color: #fff;
 }
 
 .light-themed-text {
-    color: hsl(235, 19%, 35%)
+  color: hsl(235, 19%, 35%);
 }
 
 .light-canceled-text {
-    color: hsl(233, 11%, 84%)
+  color: hsl(233, 11%, 84%);
+}
+
+.cross {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.new-row .cross {
+  visibility: hidden;
+}
+
+.new-row:hover .cross {
+  visibility: visible;
 }

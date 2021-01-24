@@ -38,15 +38,11 @@ const App = () => {
   const handleNewTodo = (newTodo) => {
     newTodo.order = todoArray.length
     setTodoArray([...todoArray, newTodo])
+    console.log([...todoArray, newTodo]);
   }
 
   const handleUpdatedTodos = (updated) => {
-    
-    updated.sort((a, b) => {
-      return a.order - b.order
-    })
-
-    setTodoArray(updated)
+        setTodoArray(updated)
   }
 
   return (
